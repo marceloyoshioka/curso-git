@@ -1,0 +1,19 @@
+<section class="container">
+  <h2 class="titulo">MATRÍCULAS</h2>
+  <table class="tabela">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo">Nome</th>
+      <th class="tabela__cabecalho__conteudo">Idade</th>
+    </thead>
+    <tbody *ngIf="matriculas?.length > 0; else listaVazia">
+      <tr class="tabela__linha" *ngFor="let matricula of matriculas">
+        <td class="tabela__conteudo">{{ matricula?.nome }}</td>
+        <td class="tabela__conteudo">{{ matricula?.idade }}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<ng-template #listaVazia>
+  <p>Nenhuma matrícula realizada</p>
+</ng-template>
+

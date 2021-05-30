@@ -1,0 +1,4 @@
+insert into aluno (nome,idade) values ('Andrea',35);
+insert into aluno (nome,idade) values ('Marcelo',38);
+insert into aluno (nome,idade) values ('Pedro',9);
+insert into aluno (nome,idade) values ('Arthur',3);
